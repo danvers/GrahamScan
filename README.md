@@ -1,9 +1,21 @@
 # Graham Scan Algorithm
-This is a java implemented demo the Graham Scan algorithm.
+This is a demo of the Graham Scan algorithm, implemented in Java and delivered with an Applet.
 
-For more about the algorithm see:
-T.H. Cormen, C.E. Leiserson, R.L. Rivest & C. Stein (2001). Introduction to Algorithms. 2nd Edition, The MIT Press 
+## Usage
 
-R.L. Graham (1972). An Efficient Algorithm for Determining the Convex Hull of a Finite Planar Set. Information Processing Letters 1, 132-133
+```Java
+LinkedList<Point> list = new List();
 
-or simply here: https://de.wikipedia.org/wiki/Graham_Scan
+Point p0 = new Point(x, y);
+list.add(p0);
+...
+Point pn = new Point(x, y);
+list.add(pn);
+
+GrahamScan GS = new GrahamScan(list);
+GS.Scan();
+````
+## References
+* T.H. Cormen, C.E. Leiserson, R.L. Rivest & C. Stein (2001). Introduction to Algorithms. 2nd Edition, The MIT Press 
+* R.L. Graham (1972). An Efficient Algorithm for Determining the Convex Hull of a Finite Planar Set. Information Processing Letters 1, 132-133
+* or simply here: https://en.wikipedia.org/wiki/Graham_scan
